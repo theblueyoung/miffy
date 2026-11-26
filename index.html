@@ -440,6 +440,7 @@ body.dragging,body.dragging *{cursor:grabbing!important;user-select:none!importa
 @media (max-width:360px){.tb-tabs a{padding:0 10px}.tb-tabs{gap:0}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;scroll-behavior:auto!important}}
 </style>
+<link rel="stylesheet" href="assets/sub.css">
 </head>
 <body>
 <div class="topbar">
@@ -447,21 +448,21 @@ body.dragging,body.dragging *{cursor:grabbing!important;user-select:none!importa
   <nav class="tb-tabs" aria-label="대상">
    <a href="#" aria-current="page">재수·N수</a><a href="#">예비 고3</a><a href="#">예비 고2</a><a href="#">예비 고1</a>
   </nav>
-  <div class="tb-util"><a href="#">로그인</a><a href="#">회원가입</a><a href="#">고객센터</a><a href="https://dmember.dshw.co.kr" class="dm">디멤버 · 재원생 전용</a></div>
+  <div class="tb-util"><a href="#">로그인</a><a href="#">회원가입</a><a href="consult.html">고객센터</a><a href="https://dmember.dshw.co.kr" class="dm">디멤버 · 재원생 전용</a></div>
  </div>
 </div>
 <header class="hdr">
  <div class="wrap">
   <a href="#top" class="logo" aria-label="대성학원 홈"><span class="logo-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span><b>대성학원</b><small>SINCE 1965</small></span></a>
-  <nav class="gnb" aria-label="주 메뉴"><a href="#teachers">브랜드소개</a><a href="#lectures">All New 대성</a><a href="#change">2028 수능</a><a href="#events">설명회</a><a href="#programs">모집프로그램</a><a href="#campus">대성학원 전체보기</a></nav>
-  <div class="hdr-r"><a href="#consult" class="btn btn-y">상담 신청</a><button class="menu-btn" id="menuBtn" aria-label="메뉴 열기" aria-expanded="false" aria-controls="drawer"><span></span></button></div>
+  <nav class="gnb" aria-label="주 메뉴"><a href="brand.html">브랜드소개</a><span class="has"><a href="contents.html">All New 대성</a><div class="dd"><div><a href="contents.html">학습 콘텐츠</a><a href="teachers.html">강사진</a><a href="space.html">공간</a></div></div></span><a href="suneung-2028.html">2028 수능</a><a href="seminar.html">설명회</a><span class="has"><a href="programs.html">모집프로그램</a><div class="dd"><div><a href="programs.html#winter">윈터스쿨</a><a href="programs.html#zero">시즌ZERO</a><a href="programs.html#regular">정규시즌</a><a href="programs.html#banso">반수시즌</a></div></div></span><a href="campus.html">대성학원 전체보기</a></nav>
+  <div class="hdr-r"><a href="consult.html" class="btn btn-y">상담 신청</a><button class="menu-btn" id="menuBtn" aria-label="메뉴 열기" aria-expanded="false" aria-controls="drawer"><span></span></button></div>
  </div>
 </header>
 <div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="전체 메뉴">
  <div class="drawer-top"><span class="logo"><span class="logo-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span><b>대성학원</b></span></span><button class="x-btn" id="drawerClose" aria-label="메뉴 닫기">×</button></div>
- <nav><a href="#teachers">브랜드소개</a><a href="#lectures">All New 대성</a><a href="#change">2028 수능</a><a href="#events">설명회</a><a href="#programs">모집프로그램</a><a href="#campus">대성학원 전체보기</a></nav>
- <div class="util"><a href="#">로그인</a><a href="#">회원가입</a><a href="#">고객센터</a><a href="https://dmember.dshw.co.kr" class="dm">디멤버 · 재원생 전용</a></div>
- <a href="#consult" class="btn btn-y" style="width:100%">상담 신청</a>
+ <nav><a href="brand.html">브랜드소개</a><a href="contents.html">All New 대성</a><a href="contents.html" class="sb">학습 콘텐츠</a><a href="teachers.html" class="sb">강사진</a><a href="space.html" class="sb">공간</a><a href="suneung-2028.html">2028 수능</a><a href="seminar.html">설명회</a><a href="programs.html">모집프로그램</a><a href="programs.html#winter" class="sb">윈터스쿨</a><a href="programs.html#zero" class="sb">시즌ZERO</a><a href="programs.html#regular" class="sb">정규시즌</a><a href="programs.html#banso" class="sb">반수시즌</a><a href="campus.html">대성학원 전체보기</a></nav>
+ <div class="util"><a href="#">로그인</a><a href="#">회원가입</a><a href="consult.html">고객센터</a><a href="https://dmember.dshw.co.kr" class="dm">디멤버 · 재원생 전용</a></div>
+ <a href="consult.html" class="btn btn-y" style="width:100%">상담 신청</a>
 </div>
 
 <main id="top">
@@ -487,7 +488,7 @@ body.dragging,body.dragging *{cursor:grabbing!important;user-select:none!importa
 
 <section class="sec" id="teachers">
  <div class="wrap">
-  <div class="sec-head"><div><span class="eyebrow">TEACHERS</span><h2>대성 선생님</h2></div><a href="#" class="more">강사진 전체보기 →</a></div>
+  <div class="sec-head"><div><span class="eyebrow">TEACHERS</span><h2>대성 선생님</h2></div><a href="teachers.html" class="more">강사진 전체보기 →</a></div>
   <div class="chips" role="group" aria-label="과목 선택" id="tChips">
    <button class="chip" aria-pressed="true" data-f="all">전체</button><button class="chip" aria-pressed="false" data-f="kor">국어</button><button class="chip" aria-pressed="false" data-f="math">수학</button><button class="chip" aria-pressed="false" data-f="eng">영어</button><button class="chip" aria-pressed="false" data-f="soc">사탐</button><button class="chip" aria-pressed="false" data-f="sci">과탐</button>
   </div>
@@ -570,19 +571,19 @@ body.dragging,body.dragging *{cursor:grabbing!important;user-select:none!importa
 
 <section class="sec" id="programs">
  <div class="wrap">
-  <div class="sec-head"><div><span class="eyebrow">PROGRAMS</span><h2>지금 접수할 수 있는 과정</h2></div></div>
+  <div class="sec-head"><div><span class="eyebrow">PROGRAMS</span><h2>지금 접수할 수 있는 과정</h2></div><a href="programs.html" class="more">모집프로그램 전체보기 →</a></div>
   <div class="pgrid">
-   <article class="pcard" style="--c1:#0F8A8F;--c2:#074259"><span class="badge hot">마감 임박</span><h3>윈터스쿨</h3><p class="sub">고1·2·3 · 4주 완성</p><dl><dt>개강</dt><dd>01.04</dd><dt>접수</dt><dd>대기접수</dd></dl><a href="#consult" class="btn">대기 접수</a><span class="big" aria-hidden="true">W</span></article>
-   <article class="pcard" style="--c1:#1F8FA0;--c2:#0B4A63"><span class="badge">알림 신청</span><h3>시즌ZERO</h3><p class="sub">N수 · 과목+강사 선택</p><dl><dt>개강</dt><dd>01.11</dd><dt>접수</dt><dd>12.17 10:00</dd></dl><a href="#consult" class="btn">알림 신청</a><span class="big" aria-hidden="true">Z</span></article>
-   <article class="pcard" style="--c1:#2E7A99;--c2:#123D5A"><span class="badge">2월 개강</span><h3>정규시즌</h3><p class="sub">재수 정규반</p><dl><dt>개강</dt><dd>02월</dd><dt>접수</dt><dd>공지 예정</dd></dl><a href="#consult" class="btn">알림 신청</a><span class="big" aria-hidden="true">R</span></article>
-   <article class="pcard" style="--c1:#3E8C80;--c2:#174A45"><span class="badge">상시 문의</span><h3>반수시즌</h3><p class="sub">대학 재학생 · 반수</p><dl><dt>개강</dt><dd>공지 예정</dd><dt>접수</dt><dd>공지 예정</dd></dl><a href="#consult" class="btn">알림 신청</a><span class="big" aria-hidden="true">B</span></article>
+   <article class="pcard" style="--c1:#0F8A8F;--c2:#074259"><span class="badge hot">마감 임박</span><h3>윈터스쿨</h3><p class="sub">고1·2·3 · 4주 완성</p><dl><dt>개강</dt><dd>01.04</dd><dt>접수</dt><dd>대기접수</dd></dl><a href="consult.html?p=winter" class="btn">대기 접수</a><span class="big" aria-hidden="true">W</span></article>
+   <article class="pcard" style="--c1:#1F8FA0;--c2:#0B4A63"><span class="badge">알림 신청</span><h3>시즌ZERO</h3><p class="sub">N수 · 과목+강사 선택</p><dl><dt>개강</dt><dd>01.11</dd><dt>접수</dt><dd>12.17 10:00</dd></dl><a href="consult.html?p=zero" class="btn">알림 신청</a><span class="big" aria-hidden="true">Z</span></article>
+   <article class="pcard" style="--c1:#2E7A99;--c2:#123D5A"><span class="badge">2월 개강</span><h3>정규시즌</h3><p class="sub">재수 정규반</p><dl><dt>개강</dt><dd>02월</dd><dt>접수</dt><dd>공지 예정</dd></dl><a href="consult.html?p=regular" class="btn">알림 신청</a><span class="big" aria-hidden="true">R</span></article>
+   <article class="pcard" style="--c1:#3E8C80;--c2:#174A45"><span class="badge">상시 문의</span><h3>반수시즌</h3><p class="sub">대학 재학생 · 반수</p><dl><dt>개강</dt><dd>공지 예정</dd><dt>접수</dt><dd>공지 예정</dd></dl><a href="consult.html?p=banso" class="btn">알림 신청</a><span class="big" aria-hidden="true">B</span></article>
   </div>
  </div>
 </section>
 
 <section class="sec" id="change">
  <div class="wrap">
-  <div class="sec-head"><div><span class="eyebrow">2028 수능</span><h2>달라지는 세 가지</h2></div></div>
+  <div class="sec-head"><div><span class="eyebrow">2028 수능</span><h2>달라지는 세 가지</h2></div><a href="suneung-2028.html" class="more">자세히 보기 →</a></div>
   <div class="cgrid">
    <article class="ccard"><div class="ch" style="--c1:#1F8FA0;--c2:#0B4A63">선택과목 폐지</div><p>국어·수학·탐구 영역의 선택과목이 없어집니다.</p></article>
    <article class="ccard"><div class="ch" style="--c1:#0FA39A;--c2:#0A5D63">통합사회·통합과학</div><p>탐구는 두 과목에 모두 응시하는 구조로 바뀝니다.</p></article>
@@ -593,19 +594,19 @@ body.dragging,body.dragging *{cursor:grabbing!important;user-select:none!importa
 
 <section class="sec" id="events">
  <div class="wrap">
-  <div class="sec-head"><div><span class="eyebrow">EVENTS</span><h2>설명회 · 이벤트</h2></div><a href="#" class="more">전체보기 →</a></div>
+  <div class="sec-head"><div><span class="eyebrow">EVENTS</span><h2>설명회 · 이벤트</h2></div><a href="seminar.html" class="more">전체보기 →</a></div>
   <div class="egrid">
-   <a href="#consult" class="ecard"><div class="em"><img src="assets/e1-600.webp" srcset="assets/e1-400.webp 400w, assets/e1-600.webp 600w" sizes="(max-width:600px) 116px, (max-width:1100px) 50vw, 280px" width="600" height="246" alt="설명회장을 가득 채운 학생들" loading="lazy" decoding="async"><span class="dday" data-date="2026-12-06">D-11</span></div><div class="eb"><h3>윈터스쿨 설명회 (2차)</h3><p class="when">고1 12.06(일) 13:00 · 고2 15:00</p><p class="how">온라인 동시 진행</p></div></a>
-   <a href="#consult" class="ecard"><div class="em"><img src="assets/e2-600.webp" srcset="assets/e2-400.webp 400w, assets/e2-600.webp 600w" sizes="(max-width:600px) 116px, (max-width:1100px) 50vw, 280px" width="600" height="246" alt="책상 위의 수첩과 태블릿" loading="lazy" decoding="async"><span class="dday" data-date="2026-12-09">D-14</span></div><div class="eb"><h3>2028 입시전략 특강</h3><p class="when">12.09(수) 19:00</p><p class="how">개편 대비 학습 전략</p></div></a>
-   <a href="#consult" class="ecard"><div class="em"><img src="assets/e3-600.webp" srcset="assets/e3-400.webp 400w, assets/e3-600.webp 600w" sizes="(max-width:600px) 116px, (max-width:1100px) 50vw, 280px" width="600" height="246" alt="상담 중인 두 사람" loading="lazy" decoding="async"><span class="dday" data-date="2026-12-19">D-24</span></div><div class="eb"><h3>시즌ZERO 설명회 1차</h3><p class="when">12.19(토) 14:00</p><p class="how">사전 예약 필수</p></div></a>
-   <a href="#consult" class="ecard"><div class="em"><img src="assets/e4-600.webp" srcset="assets/e4-400.webp 400w, assets/e4-600.webp 600w" sizes="(max-width:600px) 116px, (max-width:1100px) 50vw, 280px" width="600" height="246" alt="시험지에 답을 적는 손" loading="lazy" decoding="async"><span class="dday live">접수중</span></div><div class="eb"><h3>더 프리미엄 모의고사</h3><p class="when">외부생 응시 가능</p><p class="how">시험 장소·일정 확인</p></div></a>
+   <a href="seminar.html#s-winter2" class="ecard"><div class="em"><img src="assets/e1-600.webp" srcset="assets/e1-400.webp 400w, assets/e1-600.webp 600w" sizes="(max-width:600px) 116px, (max-width:1100px) 50vw, 280px" width="600" height="246" alt="설명회장을 가득 채운 학생들" loading="lazy" decoding="async"><span class="dday" data-date="2026-12-06">D-11</span></div><div class="eb"><h3>윈터스쿨 설명회 (2차)</h3><p class="when">고1 12.06(일) 13:00 · 고2 15:00</p><p class="how">온라인 동시 진행</p></div></a>
+   <a href="seminar.html#s-strategy1" class="ecard"><div class="em"><img src="assets/e2-600.webp" srcset="assets/e2-400.webp 400w, assets/e2-600.webp 600w" sizes="(max-width:600px) 116px, (max-width:1100px) 50vw, 280px" width="600" height="246" alt="책상 위의 수첩과 태블릿" loading="lazy" decoding="async"><span class="dday" data-date="2026-12-09">D-14</span></div><div class="eb"><h3>2028 입시전략 특강</h3><p class="when">12.09(수) 19:00</p><p class="how">개편 대비 학습 전략</p></div></a>
+   <a href="seminar.html#s-zero1" class="ecard"><div class="em"><img src="assets/e3-600.webp" srcset="assets/e3-400.webp 400w, assets/e3-600.webp 600w" sizes="(max-width:600px) 116px, (max-width:1100px) 50vw, 280px" width="600" height="246" alt="상담 중인 두 사람" loading="lazy" decoding="async"><span class="dday" data-date="2026-12-19">D-24</span></div><div class="eb"><h3>시즌ZERO 설명회 1차</h3><p class="when">12.19(토) 14:00</p><p class="how">사전 예약 필수</p></div></a>
+   <a href="seminar.html#s-mock" class="ecard"><div class="em"><img src="assets/e4-600.webp" srcset="assets/e4-400.webp 400w, assets/e4-600.webp 600w" sizes="(max-width:600px) 116px, (max-width:1100px) 50vw, 280px" width="600" height="246" alt="시험지에 답을 적는 손" loading="lazy" decoding="async"><span class="dday live">접수중</span></div><div class="eb"><h3>더 프리미엄 모의고사</h3><p class="when">외부생 응시 가능</p><p class="how">시험 장소·일정 확인</p></div></a>
   </div>
  </div>
 </section>
 
 <section class="sec" id="space">
  <div class="wrap">
-  <div class="sec-head"><div><span class="eyebrow">SPACE</span><h2>공부에 집중하는 공간</h2></div><a href="#" class="more">시설 안내 →</a></div>
+  <div class="sec-head"><div><span class="eyebrow">SPACE</span><h2>공부에 집중하는 공간</h2></div><a href="space.html" class="more">시설 안내 →</a></div>
   <div class="sgrid">
    <figure><img src="assets/s1-1000.webp" srcset="assets/s1-560.webp 560w, assets/s1-1000.webp 1000w" sizes="(max-width:600px) 100vw, 580px" width="1000" height="670" alt="계단식 좌석이 놓인 대형 강의실" loading="lazy" decoding="async"><figcaption><b>대형 강의실</b><span>예시 이미지</span></figcaption></figure>
    <figure><img src="assets/s2-1000.webp" srcset="assets/s2-560.webp 560w, assets/s2-1000.webp 1000w" sizes="(max-width:600px) 100vw, 580px" width="1000" height="670" alt="칸막이 책상이 줄지어 놓인 자습실" loading="lazy" decoding="async"><figcaption><b>칸막이 자습실</b><span>예시 이미지</span></figcaption></figure>
@@ -615,7 +616,7 @@ body.dragging,body.dragging *{cursor:grabbing!important;user-select:none!importa
 
 <section class="sec" id="campus">
  <div class="wrap">
-  <div class="sec-head"><div><span class="eyebrow">CAMPUS</span><h2>나에게 맞는 캠퍼스</h2></div></div>
+  <div class="sec-head"><div><span class="eyebrow">CAMPUS</span><h2>나에게 맞는 캠퍼스</h2></div><a href="campus.html" class="more">전체보기 →</a></div>
   <div class="cpgrid">
    <div class="cpcard"><h3>재수종합학원</h3><ul>
     <li><span>대성학원 본원</span><a href="tel:028144500">02-814-4500</a></li>
